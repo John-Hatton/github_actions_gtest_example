@@ -19,9 +19,9 @@ name: my-workflow-name
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -53,7 +53,7 @@ After some time (depending on you project and test complexity) you see the resul
 
 # Build local
 ```bash
-git clone git@github.com:bastianhjaeger/github_actions_gtest_example.git
+git clone git@github.com:John-Hatton/github_actions_gtest_example.git
 cd github_actions_gtest_example
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
